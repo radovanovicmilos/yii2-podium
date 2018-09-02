@@ -4,7 +4,7 @@ namespace bizley\podium;
 
 use bizley\podium\models\User;
 use yii\base\InvalidConfigException;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\base\View;
 use yii\caching\Cache;
 use yii\di\Instance;
@@ -39,7 +39,7 @@ use yii\widgets\FragmentCache;
  *
  * @property Cache $engine
  */
-class PodiumCache extends Object
+class PodiumCache extends BaseObject
 {
     /**
      * @var string Podium cache element prefix.
